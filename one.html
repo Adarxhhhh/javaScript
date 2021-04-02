@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+      <title>
+         test
+      </title>
+      <link rel="stylesheet" href="one.css">
+   </head>
+   
+   <body>
+      <h2 class="javascript-header">My first Javascript</h2>
+
+      <button class="onclick" onclick="showDateTime()" type="button">
+         Click to get the date and time
+      </button>
+
+      <p id="demo"></p>
+
+      <script>
+         function showDateTime(){
+            document.getElementById('demo').innerHTML = Date();
+
+            setTimeout(function()
+            {
+               document.getElementById('demo').innerHTML="";
+            }, 3000);
+         }
+      </script>
+   </body>
+</html>

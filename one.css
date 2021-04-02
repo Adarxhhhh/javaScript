@@ -1,0 +1,22 @@
+.onclick{
+   color: white;
+   font-family: Arial;
+   background-color: rgb(29, 100, 176);
+   border: 0;
+   border-radius: 20px;
+   padding: 13px;
+   cursor: grab;
+}
+
+.onclick:hover{
+   opacity: 0.8;
+}
+
+.onclick:active{
+   opacity: 0.6;
+}
+
+.javascript-header{
+   font-family: Arial;
+
+}
