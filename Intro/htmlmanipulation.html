@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>test</title>
+      <style>
+         #demo {
+            transition : font-size 0.9s ease;
+         }
+
+         #demo1 {
+            transition: opacity 0.5s ease-in-out;
+            opacity: 1;
+         }
+
+         .hidden {
+            opacity : 0;
+         }
+      </style>
+   </head>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p id="demo">JavaScript can change the style of an HTML element.</p>
+
+<button type="button" onclick="changeFontSize()">Click Me!</button>
+
+<p id="demo1">
+   Java Script can hide elements
+</p>
+
+<button type="button" onclick="hideelements()">Click Me!</button>
+
+<script src="script.js"></script>
+
+</body>
+</html>

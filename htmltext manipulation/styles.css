@@ -1,0 +1,21 @@
+/* Styling the box */
+.box {
+   width: 200px;
+   height: 100px;
+   background-color: #3498db;
+   color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 18px;
+   margin: 50px auto;
+   border-radius: 8px;
+   transition: opacity 0.5s ease-in-out; /* Smooth transition for opacity */
+   opacity: 1; /* Initial state */
+ }
+ 
+ /* Class for hiding the element smoothly */
+ .hidden {
+   opacity: 0; /* Hidden state */
+ }
+ 

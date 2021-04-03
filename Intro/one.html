@@ -18,13 +18,19 @@
       <p id="demo"></p>
 
       <script>
+         let timeoutId;
          function showDateTime(){
+
             document.getElementById('demo').innerHTML = Date();
 
-            setTimeout(function()
+            if(timeoutId){
+               clearTimeout(timeoutId);
+            }
+
+            timeoutId = setTimeout(function()
             {
                document.getElementById('demo').innerHTML="";
-            }, 3000);
+            }, 3000)
          }
       </script>
    </body>
