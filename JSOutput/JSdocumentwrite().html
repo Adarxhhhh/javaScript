@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+      <title>
+         document.write();
+      </title>
+   </head>
+
+   <body>
+      <!-- using document.write() erases all the contents of a page and opens a new document with only the contents of the 
+       documents.write part in it
+       
+       This is because of a few reasons
+       
+         1. every html file is loaded as document.
+         2. each line of code is loaded in steps
+         3. after completely loading any html documemt the doument.close() is called
+         4. once a document.write() is called after a document.close() was called a new document.open() is called
+         5. This means everything on the existing document is erased and only the new document.open() contents are displayed-->
+
+         <h2>
+            Web page!
+         </h2>
+
+         <p>
+            What can document.write() do?
+         </p>
+
+         <script>
+            document.write(5+6);
+         </script>
+
+         <p>calling a document.write() before the html document closes is okay. In the next section we will call the element in a button which
+            is triggered after the document is closed.
+         </p>
+
+         <button type="button" onclick="document.write('This page was refereshed because document.open() was called again and hence you lost all the previous progress')">TRY!!</button>
+   </body>
+</html>

@@ -1,0 +1,24 @@
+<!-- JavaScript uses the document.getElementById(id) method to access a HTML element. The innerHTML property defines the HTML content-->
+
+<!DOCTYPE html>
+
+<html>
+   <head>
+      <title>
+         JSDisplay
+      </title>
+   </head>
+
+   <body>
+      <h1>Web page</h1>
+      <p>First Paragraph</p>
+
+      <p id="demo"> The result of 5+6 is :</p>
+      
+      <!-- using the innerHTML += we concat the result of the innerHTML element to the existing HTML element. Just equating it replaces all content of the HTML element with the content specified in the innerHTML element -->
+      <script>
+         document.getElementById('demo').innerHTML += 5 + 6;
+      </script>
+   
+   </body>
+</html>
